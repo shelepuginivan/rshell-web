@@ -1,8 +1,9 @@
 import Header from '@/components/Header/Header'
 import Intro from '@/components/Intro/Intro'
 import Head from 'next/head'
+import {FunctionComponent} from 'react'
 
-const Index = () => {
+const Index: FunctionComponent = () => {
 	return (
 		<div>
 			<Head>
