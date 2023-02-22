@@ -3,6 +3,7 @@ import SectionCommandInterpreter from '@/components/SectionCommandInterpreter/Se
 import Intro from '@/components/Intro/Intro'
 import Head from 'next/head'
 import {FC} from 'react'
+import SectionScriptingLanguage from '@/components/SectionScriptingLanguage/SectionScriptingLanguage'
 
 const Index: FC = () => {
 	return (
@@ -13,6 +14,7 @@ const Index: FC = () => {
 			<Header/>
 			<Intro/>
 			<SectionCommandInterpreter/>
+			<SectionScriptingLanguage/>
 		</div>
 	)
 }
