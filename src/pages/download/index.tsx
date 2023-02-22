@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import {FunctionComponent} from 'react'
+import {FC} from 'react'
 
-const Index: FunctionComponent = () => {
+const Index: FC = () => {
 	return (
 		<div>
 			<Head>
