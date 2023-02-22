@@ -1,3 +1,5 @@
+import About from '@/components/About/About'
+import Header from '@/components/Header/Header'
 import Head from 'next/head'
 import {FunctionComponent} from 'react'
 
@@ -7,6 +9,8 @@ const Index: FunctionComponent = () => {
 			<Head>
 				<title>О rshell</title>
 			</Head>
+			<Header/>
+			<About/>
 		</div>
 	)
 }
