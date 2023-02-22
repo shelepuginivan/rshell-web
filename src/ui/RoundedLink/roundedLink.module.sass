@@ -1,0 +1,28 @@
+@import '../../styles/main'
+@import '../../styles/variables'
+
+.link
+	@include flex-row-center
+	padding: 10px 20px 10px 20px
+	text-decoration: none
+	font-size: x-large
+	max-height: 60px
+	border-radius: 30px
+	outline: 2px solid
+
+	&[color='red']
+		outline-color: $secondary-red
+		color: $secondary-red
+
+	&[color='green']
+		color: $secondary-green
+		outline-color: $secondary-green
+
+	&:hover
+		color: $white
+
+		&[color='red']
+			background-color: $secondary-red
+
+		&[color='green']
+			background-color: $secondary-green
