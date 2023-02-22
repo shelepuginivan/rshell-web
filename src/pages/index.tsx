@@ -9,7 +9,7 @@ const Index: FC = () => {
 			<Head>
 				<title>rshell - командная оболочка UNIX</title>
 			</Head>
-			<Header />
+			<Header/>
 			<Intro/>
 		</div>
 	)
