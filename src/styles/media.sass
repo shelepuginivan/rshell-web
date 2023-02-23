@@ -1,0 +1,48 @@
+@import 'variables'
+
+@media only screen and (max-width: 700px)
+	main.page > section
+		padding: 50px
+
+	div > code
+		font-size: 0.85em
+		word-break: break-word
+		padding-right: 20px
+		width: 100%
+
+
+@media only screen and (max-width: $l-mobile-width)
+	main.page > section
+		padding: 30px
+
+		.main-header
+			font-size: 2.5em
+		menu > a
+			margin-inline: 10px
+			font-size: 1em
+
+
+	main.page > header
+		justify-content: space-between
+		padding-inline: 20px
+		background-color: $black
+		backdrop-filter: none
+
+	header > i.icon-menu
+		display: flex
+
+	header > a
+		display: none
+
+		&[href='/']
+			display: inline
+
+	header > .menu
+		backdrop-filter: blur(15px)
+
+	div > code
+		font-size: 0.8em
+		text-overflow: ellipsis
+		width: 100%
+
+
