@@ -5,13 +5,13 @@ import {FC} from 'react'
 
 const Index: FC = () => {
 	return (
-		<div>
+		<main className="page">
 			<Head>
 				<title>Скачать rshell</title>
 			</Head>
 			<Header/>
 			<DownloadInstruction/>
-		</div>
+		</main>
 	)
 }
 

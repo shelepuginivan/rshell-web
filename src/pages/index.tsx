@@ -7,7 +7,7 @@ import SectionScriptingLanguage from '@/components/SectionScriptingLanguage/Sect
 
 const Index: FC = () => {
 	return (
-		<div>
+		<main className="page">
 			<Head>
 				<title>rshell - командная оболочка UNIX</title>
 			</Head>
@@ -15,7 +15,7 @@ const Index: FC = () => {
 			<Intro/>
 			<SectionCommandInterpreter/>
 			<SectionScriptingLanguage/>
-		</div>
+		</main>
 	)
 }
 

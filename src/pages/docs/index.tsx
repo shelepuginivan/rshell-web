@@ -5,13 +5,13 @@ import Documentation from '@/components/Documentation/Documentation'
 
 const Index: FC = () => {
 	return (
-		<div>
+		<main className="page">
 			<Head>
 				<title>Документация -  rshell</title>
 			</Head>
 			<Header/>
 			<Documentation/>
-		</div>
+		</main>
 	)
 }
 
