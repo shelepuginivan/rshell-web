@@ -7,7 +7,7 @@ const Index: FC = () => {
 	return (
 		<div>
 			<Head>
-				<title>Установить rshell</title>
+				<title>Скачать rshell</title>
 			</Head>
 			<Header/>
 			<DownloadInstruction/>
