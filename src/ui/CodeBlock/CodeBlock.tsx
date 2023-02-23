@@ -1,7 +1,11 @@
 import {FC, PropsWithChildren, useState} from 'react'
 import styles from './codeBlock.module.sass'
 
-const CodeBlock: FC<PropsWithChildren> = ({children}) => {
+type PropsType = PropsWithChildren & {
+	stream?: 'stdout' | 'stderr' | 'mixed'
+}
+
+const CodeBlock: FC<PropsType> = ({children, stream}) => {
 	const [copiedToClipboard, setCopiedToClipboard] = useState<boolean>(false)
 
 	const copyCodeToClipboard = async () => {
@@ -12,7 +16,7 @@ const CodeBlock: FC<PropsWithChildren> = ({children}) => {
 	}
 
 	return (
-		<div className={styles.code}>
+		<div className={styles.code} data-stream={stream}>
 			<code>{children}</code>
 			<button
 				className={styles.buttonCopy}

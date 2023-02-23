@@ -10,6 +10,24 @@
 	border-radius: 5px
 	margin: 10px 0 10px 0
 
+	&[data-stream=stdout]
+		.buttonCopy
+			display: none
+
+	&[data-stream=stderr]
+		*
+			color: red
+
+		.buttonCopy
+			display: none
+
+	&[data-stream=mixed]
+		span[color=red]
+			color: red
+
+		.buttonCopy
+			display: none
+
 .buttonCopy
 	@include flex-row-center
 	position: relative
