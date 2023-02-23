@@ -6,7 +6,7 @@ import {documentationRoute, downloadRoute} from '@/utils/constants'
 const Intro: FC = () => {
 	return (
 		<section className={styles.intro}>
-			<h1><span>rshell</span> - Российская оболочка для UNIX систем</h1>
+			<h1 className="main-header"><span>rshell</span> - Российская оболочка для UNIX систем</h1>
 			<menu>
 				<RoundedLink color="red" href={downloadRoute}>Скачать</RoundedLink>
 				<RoundedLink color="green" href={documentationRoute}>Документация</RoundedLink>
