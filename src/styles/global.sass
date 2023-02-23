@@ -3,6 +3,19 @@
 *
 	font-family: "Segoe UI", sans-serif
 	color: $white
+	scrollbar-color: $darkgray
+	scrollbar-width: length(5px)
+	scrollbar-gutter: stable
+
+::-webkit-scrollbar
+	width: 5px
+
+::-webkit-scrollbar-thumb
+	background-color: $gray
+	border-radius: 100vw
+
+	&:hover
+		background-color: $darkgray
 
 a
 	color: $accent-red
