@@ -7,7 +7,7 @@ const DownloadInstruction: FC = () => {
 		<section>
 			<h1>Скачать rshell</h1>
 
-			<h2 className={styles.h2}>Ниже приведена инструкция по установке оболочки на ваш компьютер:</h2>
+			<h2 className={styles.h2}>Ниже приведена инструкция по установке оболочки на ваше устройство:</h2>
 			<p>
 				Обратите внимание! Для установки rshell вам потребуются <a href="https://git-scm.com/download">git</a> и <a href="https://rustlang.org/">язык программирования Rust</a>
 			</p>
