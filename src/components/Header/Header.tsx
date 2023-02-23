@@ -13,7 +13,10 @@ const Header: FC = () => {
 				<img className={styles.img} draggable={false} src="/favicon.svg" alt=""/>
 			</Link>
 			<Link data-active={router.pathname == downloadRoute} className={styles.link} href={downloadRoute}>Скачать</Link>
-			<Link target="_blank" className={styles.link} href={sourceCodeRoute}>Исходный код</Link>
+			<Link target="_blank"
+				className={styles.link}
+				href={sourceCodeRoute}
+			>Исходный код <i className="icon-external-link"></i></Link>
 			<Link data-active={router.pathname == documentationRoute} className={styles.link} href={documentationRoute}>Документация</Link>
 			<Link data-active={router.pathname == aboutRoute} className={styles.link} href={aboutRoute}>О проекте</Link>
 		</header>
