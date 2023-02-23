@@ -3,7 +3,7 @@ import styles from './sectionCommandInterpreter.module.sass'
 
 const SectionCommandInterpreter: FC = () => {
 	return (
-		<section className={styles.helloWorld}>
+		<section className={styles.sectionCommandInterpreter}>
 			<code>
 				<span>$ echo Hello, World! | @format --red --bold --italic</span>
 				<br/>
