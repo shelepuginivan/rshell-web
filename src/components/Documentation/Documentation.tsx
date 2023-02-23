@@ -1,13 +1,49 @@
 import {FC} from 'react'
 import CodeBlock from '@/ui/CodeBlock/CodeBlock'
 import styles from './documentation.module.sass'
+import Link from 'next/link'
 
 const Documentation: FC = () => {
+	const anchors = [
+		'команды-системы',
+		'встроенные-команды-оболочки',
+		'оператор-и',
+		'последовательное-выполнение-комманд',
+		'комментарии',
+		'конвеер',
+		'перенаправление-ввода-вывода',
+		'исполнение-скриптов',
+		'профиль',
+		'переменные',
+		'строковые-литералы',
+		'псевдонимы',
+		'функции',
+		'мгновенные-команды-instants'
+	]
+
 	return (
 		<section className={styles.docs}>
 			<h1>Документация rshell</h1>
 
-			<h2>1. Команды системы</h2>
+			<h2>Оглавление</h2>
+			<ol className={styles.tableOfContents}>
+				<li><Link href={`#${anchors[0]}`}>Команды системы</Link></li>
+				<li><Link href={`#${anchors[1]}`}>Встроенные команды оболочки</Link></li>
+				<li><Link href={`#${anchors[2]}`}>Оператор <kbd>&&</kbd></Link></li>
+				<li><Link href={`#${anchors[3]}`}>Последовательное выполнение комманд</Link></li>
+				<li><Link href={`#${anchors[4]}`}>Комментарии</Link></li>
+				<li><Link href={`#${anchors[5]}`}>Конвеер</Link></li>
+				<li><Link href={`#${anchors[6]}`}>Перенаправление ввода/вывода</Link></li>
+				<li><Link href={`#${anchors[7]}`}>Исполнение скриптов</Link></li>
+				<li><Link href={`#${anchors[8]}`}>Профиль</Link></li>
+				<li><Link href={`#${anchors[9]}`}>Переменные</Link></li>
+				<li><Link href={`#${anchors[10]}`}>Строковые литералы</Link></li>
+				<li><Link href={`#${anchors[11]}`}>Псевдонимы</Link></li>
+				<li><Link href={`#${anchors[12]}`}>Функции</Link></li>
+				<li><Link href={`#${anchors[13]}`}>Мгновенные команды (instants)</Link></li>
+			</ol>
+
+			<h2 className={styles.anchor} id={anchors[0]}>1. Команды системы</h2>
 			<blockquote>
 				<p>
 					Выполнить системные команды, такие как <kbd>mkdir</kbd>, <kbd>ls</kbd> можно
@@ -21,7 +57,7 @@ const Documentation: FC = () => {
 				<CodeBlock>vim new.txt</CodeBlock>
 			</blockquote>
 
-			<h2>2. Встроенные команды оболочки</h2>
+			<h2 className={styles.anchor} id={anchors[1]}>2. Встроенные команды оболочки</h2>
 			<blockquote>
 				<p>
 					rshell предоставляет некоторые встроенные команды:
@@ -35,7 +71,7 @@ const Documentation: FC = () => {
 				</ul>
 			</blockquote>
 
-			<h2>3. Оператор <kbd>&&</kbd></h2>
+			<h2 className={styles.anchor} id={anchors[2]}>3. Оператор <kbd>&&</kbd></h2>
 			<blockquote>
 				<p>
 					`&&` (или логическое И) используется, когда мы хотим выполнять команды до тех пор,
@@ -58,7 +94,7 @@ const Documentation: FC = () => {
 				</CodeBlock>
 			</blockquote>
 
-			<h2>4. Последовательное выполнение комманд</h2>
+			<h2 className={styles.anchor} id={anchors[3]}>4. Последовательное выполнение комманд</h2>
 			<blockquote>
 				<p>
 					Последовательное выполнение полезно, если необходимо выполнить
@@ -100,7 +136,7 @@ const Documentation: FC = () => {
 				</CodeBlock>
 			</blockquote>
 
-			<h2>5. Комментарии</h2>
+			<h2 className={styles.anchor} id={anchors[4]}>5. Комментарии</h2>
 			<blockquote>
 				<p>
 					rshell поддерживает комментарии. Чтобы написать комментарий, используйте <kbd>#</kbd>:
@@ -116,7 +152,7 @@ const Documentation: FC = () => {
 				</CodeBlock>
 			</blockquote>
 
-			<h2>6. Конвеер</h2>
+			<h2 className={styles.anchor} id={anchors[5]}>6. Конвеер</h2>
 			<blockquote>
 				<p>
 					Конвеер позволяет перенаправлять <em>стандартный вывод</em> одной команды
@@ -142,7 +178,7 @@ const Documentation: FC = () => {
 				</p>
 			</blockquote>
 
-			<h2>7. Перенаправление ввода/вывода</h2>
+			<h2 className={styles.anchor} id={anchors[6]}>7. Перенаправление ввода/вывода</h2>
 			<blockquote>
 				<p>
 					Перенаправление ввода/вывода используется для перенаправления вывода процесса,
@@ -196,7 +232,7 @@ const Documentation: FC = () => {
 				</p>
 			</blockquote>
 
-			<h2>8. Исполнение скриптов</h2>
+			<h2 className={styles.anchor} id={anchors[7]}>8. Исполнение скриптов</h2>
 			<blockquote>
 				<p>
 					rshell может выполнять скрипты, написанные на его языке.
@@ -221,7 +257,7 @@ const Documentation: FC = () => {
 				</em>
 			</blockquote>
 
-			<h2>9. Профиль</h2>
+			<h2 className={styles.anchor} id={anchors[8]}>9. Профиль</h2>
 			<blockquote>
 				<p>
 					Профиль - это файл, который выполняется при запуске процесса оболочки.
@@ -234,7 +270,7 @@ const Documentation: FC = () => {
 				</CodeBlock>
 			</blockquote>
 
-			<h2>10. Переменные</h2>
+			<h2 className={styles.anchor} id={anchors[9]}>10. Переменные</h2>
 			<blockquote>
 				<p>
 					Объявить переменную можно с помощью ключевого слова <kbd>set</kbd>.
@@ -273,7 +309,7 @@ echo $value`}
 				</CodeBlock>
 			</blockquote>
 
-			<h2>11. Строковые литералы</h2>
+			<h2 className={styles.anchor} id={anchors[10]}>11. Строковые литералы</h2>
 			<blockquote>
 				<p>
 					Если вы хотите использовать именно строку, а не переменную, вы можете использовать
@@ -290,7 +326,7 @@ echo $v1`}
 
 			</blockquote>
 
-			<h2>12. Псевдонимы</h2>
+			<h2 className={styles.anchor} id={anchors[11]}>12. Псевдонимы</h2>
 			<blockquote>
 				<p>
 					Если вы хотите использовать одну команду/функцию вместо другой, вы можете задать псевдоним
@@ -311,7 +347,7 @@ echo $v1`}
 				<p>Теперь команда <kbd>ll</kbd> будет заменена на exa с флагами <kbd>-la</kbd></p>
 			</blockquote>
 
-			<h2>13. Функции</h2>
+			<h2 className={styles.anchor} id={anchors[12]}>13. Функции</h2>
 			<blockquote>
 				<p>
 					rshell позволяет определять функции - определённые
@@ -379,7 +415,7 @@ message my`}
 				</p>
 			</blockquote>
 
-			<h2>14. Мгновенные команды (instants)</h2>
+			<h2 className={styles.anchor} id={anchors[13]}>14. Мгновенные команды (instants)</h2>
 			<blockquote>
 				<p>
 					Инстанты &ndash; это своего рода встроенные функции. Они могут принимать аргументы из конвеера,
