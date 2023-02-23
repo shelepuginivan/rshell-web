@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import {FC} from 'react'
+import Header from '@/components/Header/Header'
 
 const Index: FC = () => {
 	return (
@@ -7,6 +8,7 @@ const Index: FC = () => {
 			<Head>
 				<title>Документация -  rshell</title>
 			</Head>
+			<Header/>
 		</div>
 	)
 }
