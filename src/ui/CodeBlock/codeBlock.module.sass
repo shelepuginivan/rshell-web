@@ -1,0 +1,27 @@
+@import '../../styles/main'
+@import '../../styles/variables'
+
+.code
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 10px
+	background-color: $darkgray
+	border-radius: 5px
+	margin: 10px 0 10px 0
+
+.buttonCopy
+	@include flex-row-center
+	position: relative
+	padding: 5px
+	background-color: transparent
+	outline: 1px solid $white
+	width: 28px
+	height: 28px
+	cursor: pointer
+
+	&[data-copied=true]
+		outline-color: $secondary-green
+
+		*
+			color: $secondary-green
