@@ -8,7 +8,7 @@ const Documentation: FC = () => {
 		'команды-системы',
 		'встроенные-команды-оболочки',
 		'оператор-и',
-		'последовательное-выполнение-комманд',
+		'последовательное-выполнение-команд',
 		'комментарии',
 		'конвеер',
 		'перенаправление-ввода-вывода',
@@ -30,7 +30,7 @@ const Documentation: FC = () => {
 				<li><Link href={`#${anchors[0]}`}>Команды системы</Link></li>
 				<li><Link href={`#${anchors[1]}`}>Встроенные команды оболочки</Link></li>
 				<li><Link href={`#${anchors[2]}`}>Оператор <kbd>&&</kbd></Link></li>
-				<li><Link href={`#${anchors[3]}`}>Последовательное выполнение комманд</Link></li>
+				<li><Link href={`#${anchors[3]}`}>Последовательное выполнение команд</Link></li>
 				<li><Link href={`#${anchors[4]}`}>Комментарии</Link></li>
 				<li><Link href={`#${anchors[5]}`}>Конвеер</Link></li>
 				<li><Link href={`#${anchors[6]}`}>Перенаправление ввода/вывода</Link></li>
@@ -94,7 +94,7 @@ const Documentation: FC = () => {
 				</CodeBlock>
 			</blockquote>
 
-			<h2 className={styles.anchor} id={anchors[3]}>4. Последовательное выполнение комманд</h2>
+			<h2 className={styles.anchor} id={anchors[3]}>4. Последовательное выполнение команд</h2>
 			<blockquote>
 				<p>
 					Последовательное выполнение полезно, если необходимо выполнить
