@@ -4,8 +4,7 @@ export default function Document() {
 	return (
 		<Html lang="ru">
 			<Head>
-add				<meta charSet="utf-8"/>
-				<meta name="viewport" content="width=device-width, initial-scale=1"/>
+				<meta charSet="utf-8"/>
 				<meta name="description" content="Российская командная оболочка для UNIX систем с открытым исходным кодом"/>
 				<meta name="keywords" content="rshell, shell, оболочка, UNIX, скриптовый язык, командная строка, язык программирования"/>
 				<meta name="author" content="Ivan Shelepugin <shelepuginivanm@gmail.com>"/>
