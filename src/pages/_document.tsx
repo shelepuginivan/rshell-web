@@ -11,7 +11,7 @@ export default function Document() {
 				<meta property="og:title" content="rshell - Командная оболочка UNIX"/>
 				<meta property="og:description" content="Российская командная оболочка для UNIX систем с открытым исходным кодом"/>
 				<meta property="og:url" content="https://rshell-web.vercel.app"/>
-				<meta property="og:image" content="https://rshell-web.vercel.app/favicon.svg"/>
+				<meta property="og:image" content="https://rshell-web.vercel.app/logo.png"/>
 				<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 				<link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg"/>
 				<link rel="manifest" href="/manifest.json"/>
