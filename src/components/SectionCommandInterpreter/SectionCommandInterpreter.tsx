@@ -15,7 +15,6 @@ const SectionCommandInterpreter: FC = () => {
 					observer.unobserve(commandRef.current as Element)
 
 					const text = 'echo Hello, World! | @format --red --bold --italic'
-					const limit = text.length
 					let iter = 0
 
 					const textAdditionInterval = setInterval(() => {
@@ -40,11 +39,11 @@ const SectionCommandInterpreter: FC = () => {
 							(outputRef.current as HTMLSpanElement).classList.add(styles.italic)
 						}
 
-						if (iter >= limit) {
+						if (iter >= text.length) {
 							clearInterval(textAdditionInterval)
 						}
 
-						++iter
+						iter++
 					}, 90)
 				}
 			})
